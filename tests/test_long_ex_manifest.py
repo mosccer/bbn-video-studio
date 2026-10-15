@@ -152,7 +152,7 @@ class RegistrationTests(unittest.TestCase):
         codex = json.loads((plugin / ".codex-plugin/plugin.json").read_text())
         market = json.loads((ROOT / ".claude-plugin/marketplace.json").read_text())
         self.assertEqual({claude["version"], codex["version"], market["metadata"]["version"],
-                          market["plugins"][0]["version"]}, {"0.2.1"})
+                          market["plugins"][0]["version"]}, {"0.3.0"})
 
 
 if __name__ == "__main__":
